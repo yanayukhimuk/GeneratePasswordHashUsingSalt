@@ -11,11 +11,11 @@ namespace GeneratePasswordHashUsingSalt
 
             while(true)
             {
-                GeneratePasswordHashUsingSalt(password, array);
+                GeneratePasswordHashUsingSalt(ref password, ref array);
             }
         }
 
-        public static string GeneratePasswordHashUsingSalt(string passwordText, byte[] salt)
+        public static string GeneratePasswordHashUsingSalt(ref string passwordText, ref byte[] salt)
         {
 
             var iterate = 10000;
